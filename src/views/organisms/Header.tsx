@@ -12,10 +12,6 @@ import {useHistory} from 'react-router-dom';
 const Header:React.FC=props=>{
     const history=useHistory();
 
-    const a=()=>{
-        
-    }
-
 return (
   <>
     <Head position="static">
