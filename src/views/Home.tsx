@@ -1,27 +1,26 @@
 import * as React from "react";
 import styled from 'styled-components';
-import { BrowserRouter as Router, Route, Redirect, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Top from "./Pages/Top";
 import Articles from "./Pages/Articles";
 import Contact from "./Pages/Contact";
-import Works from "./Pages/Works";
+import Products from "./Pages/Products";
 import About from "./Pages/About";
 import Header from  './organisms/Header';
-import {headerHeightNum}from '../utils/size';
 
 
 const Home: React.FC = props => {
   return (
     <>
-    <Header/>
     <Router>
+    <Header/>
       <Switch>
         <Content>
         <Route exact path="/" component={Top} />
         <Route exact path='/about' component={About} />
-        <Route exact path='/works' component={Works} />
+        <Route exact path='/products' component={Products} />
         <Route exact path='/contact' component={Contact} />
-        <Route exact path='/about' component={Articles} />
+        <Route exact path='/articles' component={Articles} />
         </Content>
       </Switch>
     </Router>
