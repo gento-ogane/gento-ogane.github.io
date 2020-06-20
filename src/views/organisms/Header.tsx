@@ -13,8 +13,7 @@ const Header:React.FC=props=>{
     const history=useHistory();
 
 return (
-  <>
-    <Head position="static">
+    <Head>
       <Bar>
         <Title variant="h6">Gento's Portfolio</Title>
         <MenuItem button onClick={()=>{history.push('/');}}>
@@ -34,7 +33,6 @@ return (
         </MenuItem>
       </Bar>
     </Head>
-  </>
 );
 }
 
@@ -43,9 +41,9 @@ return (
 const Head=styled(AppBar)`
 height:${headerHeightNum+"px"};
 background:#404040 !important;
+position:fixed;
 `
 const Bar=styled(Toolbar)`
-  
 `
 
 const Title=styled(Typography)`
@@ -58,6 +56,7 @@ const MenuItemText=styled(ListItemText)`
 const MenuItem=styled(ListItem)`
  width:10% !important;
 `
+
 
 
 
