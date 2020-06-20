@@ -3,6 +3,7 @@ import styled from "styled-components";
 import TitleText from "../atoms/TitleText";
 import Avatar from "../../utils/avatar.jpg";
 import Chip from '@material-ui/core/Chip';
+import {headerHeightNum} from "../../utils/size";
 
 const About: React.FC = (props) => {
   return (
@@ -66,6 +67,7 @@ const About: React.FC = (props) => {
 };
 
 const Wrap = styled.div`
+  margin-top:${headerHeightNum+"px"};
   width: 100%;
   text-align: center;
   padding-bottom:100px;

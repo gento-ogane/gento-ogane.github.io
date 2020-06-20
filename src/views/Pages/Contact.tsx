@@ -1,6 +1,7 @@
 import * as React from "react";
 import styled from "styled-components";
 import TitleText from "../atoms/TitleText";
+import {headerHeightNum} from "../../utils/size";
 
 const Contact: React.FC = (props) => {
   return (
@@ -11,6 +12,7 @@ const Contact: React.FC = (props) => {
 };
 
 const Wrap = styled.div`
+ margin-top:${headerHeightNum+"px"};
   width: 100%;
 `;
 

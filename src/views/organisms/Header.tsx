@@ -42,6 +42,7 @@ const Head=styled(AppBar)`
 height:${headerHeightNum+"px"};
 background:#404040 !important;
 position:fixed;
+margin-bottom:10px;
 `
 const Bar=styled(Toolbar)`
 `

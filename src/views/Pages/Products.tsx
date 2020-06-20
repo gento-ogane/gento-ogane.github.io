@@ -1,8 +1,9 @@
 import * as React from "react";
 import styled from "styled-components";
 import TitleText from "../atoms/TitleText";
+import {headerHeightNum} from "../../utils/size";
 
-const Works: React.FC = (props) => {
+const Products: React.FC = (props) => {
   return (
     <Wrap>
       <TitleText variant="h5">Products</TitleText>
@@ -11,7 +12,8 @@ const Works: React.FC = (props) => {
 };
 
 const Wrap = styled.div`
+ margin-top:${headerHeightNum+"px"};
   width: 100%;
 `;
 
-export default Works;
+export default Products;

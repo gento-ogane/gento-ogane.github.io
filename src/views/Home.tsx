@@ -1,12 +1,13 @@
 import * as React from "react";
 import styled from 'styled-components';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import Top from "./Pages/Top";
-import Articles from "./Pages/Articles";
-import Contact from "./Pages/Contact";
-import Products from "./Pages/Products";
-import About from "./Pages/About";
+import Top from "./pages/Top";
+import Articles from "./pages/Articles";
+import Contact from "./pages/Contact";
+import Products from "./pages/Products";
+import About from "./pages/About";
 import Header from  './organisms/Header';
+import Footer from  './organisms/Footer';
 
 
 const Home: React.FC = props => {
@@ -23,6 +24,7 @@ const Home: React.FC = props => {
         <Route exact path='/articles' component={Articles} />
         </Content>
       </Switch>
+    <Footer/>
     </Router>
     </>
   );
