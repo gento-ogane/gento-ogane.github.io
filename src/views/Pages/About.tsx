@@ -58,7 +58,7 @@ const About: React.FC = (props) => {
       <SkillChip label="Flutter" />
       <SkillChip label="Docker" />
       <SkillChip label="AWS" />
-      <SkillChip label="Ruby On Rails" />
+      <SkillChip label="Ruby on Rails" />
       <SkillChip label="WordPress" />
       </RowOne>
     </Wrap>
