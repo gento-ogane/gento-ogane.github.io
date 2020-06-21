@@ -1,30 +1,56 @@
 import * as React from "react";
 import styled from "styled-components";
 import TitleText from "../atoms/TitleText";
-import { headerHeightNum,footerHeightNum } from "../../utils/size";
+import { headerHeightNum, footerHeightNum } from "../../utils/size";
 import TextField from "@material-ui/core/TextField";
-import {Button as OriginalButton} from "@material-ui/core";
-
-
-const styles = {
-  input1: {
-    height: 50,
-  },
-};
+import { Button as OriginalButton } from "@material-ui/core";
 
 const Contact: React.FC = (props) => {
+
+  //変数宣言
+  const useState = React.useState;
+    
+  //状態管理
+  const [subject, setSubject] = useState<string|null>(null);
+  const [email, setEmail] = useState<string|null>(null);
+  const [content, setContent] = useState<string|null>(null);
+
+  //OnChange
+  const _handleSubjectChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setSubject(e.target.value);
+  };
+
+  const _handleEmailChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setEmail(e.target.value);
+  };
+
+  const _handleContentChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setContent(e.target.value);
+  };
+
   return (
     <Wrap>
       <Form>
         <TitleText variant="h5">Contact</TitleText>
-        <SubjectTextField required label="subject" variant="outlined" />
-        <EmailTextField required label="email" variant="outlined" />
+        <SubjectTextField
+          required
+          label="subject"
+          variant="outlined"
+          onChange={_handleSubjectChange}
+        />
+        <EmailTextField
+          required
+          label="email"
+          variant="outlined"
+          onChange={_handleEmailChange}
+        />
         <ContentTextField
           required
           label="content"
           variant="outlined"
           multiline
           rows={10}
+          onChange={_handleContentChange}
         />
         <SubmitButton variant="outlined">Submit</SubmitButton>
       </Form>
@@ -59,9 +85,9 @@ const ContentTextField = styled(TextField)`
   margin: 20px 0px !important;
 `;
 
-const SubmitButton =styled(OriginalButton)`
-   width: 80%;
+const SubmitButton = styled(OriginalButton)`
+  width: 80%;
   margin: 20px 0px !important;
-`
+`;
 
 export default Contact;
