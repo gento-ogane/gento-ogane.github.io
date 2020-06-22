@@ -4,16 +4,20 @@ import TitleText from "../atoms/TitleText";
 import { headerHeightNum, footerHeightNum } from "../../utils/size";
 import TextField from "@material-ui/core/TextField";
 import { Button as OriginalButton } from "@material-ui/core";
+import axios from "../../api/base";
+import Snackbar from "@material-ui/core/Snackbar";
+import Alert from "@material-ui/lab/Alert";
 
 const Contact: React.FC = (props) => {
-
   //変数宣言
   const useState = React.useState;
-    
+
   //状態管理
-  const [subject, setSubject] = useState<string|null>(null);
-  const [email, setEmail] = useState<string|null>(null);
-  const [content, setContent] = useState<string|null>(null);
+  const [subject, setSubject] = useState<string | null>(null);
+  const [email, setEmail] = useState<string | null>(null);
+  const [content, setContent] = useState<string | null>(null);
+  const [open, setOpen] = useState(false);
+  const [isSuccess, setIsSuccess] = useState(false);
 
   //OnChange
   const _handleSubjectChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -28,10 +32,45 @@ const Contact: React.FC = (props) => {
     setContent(e.target.value);
   };
 
+  //関数
+  const _handlePostForm = async () => {
+    try {
+      axios.post("/send", {
+        name: subject,
+        email: email,
+        body: content,
+      });
+      setIsSuccess(true);
+      setOpen(true);
+    } catch (e) {
+      setIsSuccess(false);
+      setOpen(true);
+    }
+  };
+
+  const _handleClose = (event?: React.SyntheticEvent, reason?: string) => {
+    if (reason === "clickaway") {
+      return;
+    }
+    setOpen(false);
+  };
+
   return (
     <Wrap>
+      <Snackbar open={open} autoHideDuration={6000} onClose={_handleClose}>
+        {isSuccess ? (
+          <Alert onClose={_handleClose} severity="success">
+            メッセージを送信しました。
+          </Alert>
+        ) : (
+          <Alert onClose={_handleClose} severity="error">
+            メッセージを送信できませんでした。
+          </Alert>
+        )}
+      </Snackbar>
       <Form>
         <TitleText variant="h5">Contact</TitleText>
+        <p>お気軽にお問い合わせください。</p>
         <SubjectTextField
           required
           label="subject"
@@ -52,7 +91,9 @@ const Contact: React.FC = (props) => {
           rows={10}
           onChange={_handleContentChange}
         />
-        <SubmitButton variant="outlined">Submit</SubmitButton>
+        <SubmitButton variant="outlined" onClick={_handlePostForm}>
+          Submit
+        </SubmitButton>
       </Form>
     </Wrap>
   );
@@ -87,7 +128,9 @@ const ContentTextField = styled(TextField)`
 
 const SubmitButton = styled(OriginalButton)`
   width: 80%;
-  margin: 20px 0px !important;
+  margin: 30px 0px !important;
+  color: white !important;
+  background: #404040 !important;
 `;
 
 export default Contact;

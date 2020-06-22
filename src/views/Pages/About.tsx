@@ -4,12 +4,14 @@ import TitleText from "../atoms/TitleText";
 import Avatar from "../../utils/avatar.jpg";
 import Chip from "@material-ui/core/Chip";
 import { headerHeightNum } from "../../utils/size";
+import Divider from '@material-ui/core/Divider';
 
 const About: React.FC = (props) => {
   return (
     <Wrap>
       <TitleText variant="h5">About</TitleText>
       <TitleText variant="h6">profile</TitleText>
+      <Divide variant="middle" />
       <Img src={Avatar} alt="avatar" />
       <Table>
         <Tbody>
@@ -35,10 +37,9 @@ const About: React.FC = (props) => {
           </tr>
         </Tbody>
       </Table>
-      <TitleText variant="h6">history</TitleText>
       <TitleText variant="h6">skills</TitleText>
-      {/* <Tooltip title="Lebel3"><Button>HTML</Button></Tooltip> */}
-      <p>★★★</p>
+      <Divide variant="middle" />
+      <Star>★★★</Star>
       <RowThree>
         <SkillChip label="React" />
         <SkillChip label="Unity(C#)" />
@@ -46,7 +47,7 @@ const About: React.FC = (props) => {
         <SkillChip label="HTML" />
         <SkillChip label="CSS" />
       </RowThree>
-      <p>★★</p>
+      <Star>★★</Star>
       <RowTwo>
         <SkillChip label="Python" />
         <SkillChip label="GAS" />
@@ -54,7 +55,7 @@ const About: React.FC = (props) => {
         <SkillChip label="jQuery" />
         <SkillChip label="TypeScript" />
       </RowTwo>
-      <p>★</p>
+      <Star>★</Star>
       <RowOne>
         <SkillChip label="Flutter" />
         <SkillChip label="Docker" />
@@ -128,5 +129,13 @@ const RowOne = styled.div`
 const SkillChip = styled(Chip)`
   margin: 10px;
 `;
+
+const Star = styled.p`
+ color: #494eaa;
+`
+const Divide=styled(Divider)`
+ width:40%;
+ margin:auto !important;
+`
 
 export default About;

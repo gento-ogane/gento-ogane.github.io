@@ -16,7 +16,7 @@ const Footer: React.FC = (props) => {
       <a href="https://www.facebook.com/gento.ogane"><FacebookIcon  style={{ color: "white" }}/></a>
       </MenuItem>
       <MenuItem>
-      <a href="https://twitter.com/home"><TwitterIcon style={{ color: "white" }}/></a>
+      <a href="https://twitter.com/charge_time"><TwitterIcon style={{ color: "white" }}/></a>
       </MenuItem>
     </Foot>
   );
