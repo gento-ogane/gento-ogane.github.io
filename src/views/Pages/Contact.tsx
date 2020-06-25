@@ -9,6 +9,7 @@ import Snackbar from "@material-ui/core/Snackbar";
 import Alert from "@material-ui/lab/Alert";
 
 const Contact: React.FC = (props) => {
+    
   //変数宣言
   const useState = React.useState;
 
