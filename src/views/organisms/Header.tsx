@@ -1,4 +1,4 @@
-import * as React from "react";
+import React,{useState} from "react";
 import styled from 'styled-components';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
@@ -11,25 +11,24 @@ import {useHistory} from 'react-router-dom';
 
 const Header:React.FC=props=>{
     const history=useHistory();
+    const [menuState,setMenuState]=useState(0);
 
+    
 return (
     <Head>
       <Bar>
-        <Title variant="h6">Gento's Portfolio</Title>
-        <MenuItem button onClick={()=>{history.push('/');}}>
-        <MenuItemText>Top</MenuItemText>
+        <Title variant="h6">Gento's Portfolio Site</Title>
+        <MenuItem  button onClick={()=>{history.push('/');setMenuState(0)}}>
+        <TopItemText state={menuState}>Top</TopItemText>
         </MenuItem>
-        <MenuItem button onClick={()=>{history.push('/about')}}>
-          <MenuItemText>About</MenuItemText>
+        <MenuItem button onClick={()=>{history.push('/about');setMenuState(1)}}>
+          <AboutItemText state={menuState} >About</AboutItemText>
         </MenuItem>
-        <MenuItem button onClick={()=>{history.push('/products')}}>
-          <MenuItemText>Products</MenuItemText>
+        <MenuItem button onClick={()=>{history.push('/products');setMenuState(2)}}>
+          <ProductsItemText state={menuState} >Products</ProductsItemText>
         </MenuItem>
-        <MenuItem button onClick={()=>{history.push('/articles')}}>
-          <MenuItemText>Articles</MenuItemText>
-        </MenuItem>
-        <MenuItem button onClick={()=>{history.push('/contact')}}>
-          <MenuItemText>Contact</MenuItemText>
+        <MenuItem button onClick={()=>{history.push('/contact');setMenuState(3)}}>
+          <ContactItemText state={menuState} >Contact</ContactItemText>
         </MenuItem>
       </Bar>
     </Head>
@@ -39,23 +38,37 @@ return (
 
 
 const Head=styled(AppBar)`
-height:${headerHeightNum+"px"};
-background:#404040 !important;
-position:fixed;
-margin-bottom:10px;
+  height:${headerHeightNum+"px"};
+  background:#404040 !important;
+  position:fixed;
+  margin-bottom:10px;
 `
 const Bar=styled(Toolbar)`
 `
 
 const Title=styled(Typography)`
-width:50%;
-`
-const MenuItemText=styled(ListItemText)`
- text-align:center;
+  width:50%;
 `
 
 const MenuItem=styled(ListItem)`
- width:10% !important;
+  width:10% !important;
+`
+
+const TopItemText=styled(ListItemText)<{state:Number}>`
+  text-align:center;
+  color:${props=>props.state===0?"#6a5acd":false};
+`
+const AboutItemText=styled(ListItemText)<{state:Number}>`
+  text-align:center;
+  color:${props=>props.state===1?"#6a5acd":false};
+`
+const ProductsItemText=styled(ListItemText)<{state:Number}>`
+  text-align:center;
+  color:${props=>props.state===2?"#6a5acd":false};
+`
+const ContactItemText=styled(ListItemText)<{state:Number}>`
+  text-align:center;
+  color:${props=>props.state===3?"#6a5acd":false};
 `
 
 

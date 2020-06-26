@@ -21,7 +21,6 @@ const Home: React.FC = props => {
         <Route exact path='/about' component={About} />
         <Route exact path='/products' component={Products} />
         <Route exact path='/contact' component={Contact} />
-        <Route exact path='/articles' component={Articles} />
         </Content>
       </Switch>
     <Footer/>
