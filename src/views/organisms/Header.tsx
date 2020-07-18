@@ -17,7 +17,7 @@ const Header:React.FC=props=>{
 return (
     <Head>
       <Bar>
-        <Title variant="h6">Gento's Portfolio Site</Title>
+        <Title variant="h6">Gentz.dev</Title>
         <MenuItem  button onClick={()=>{history.push('/');setMenuState(0)}}>
         <TopItemText state={menuState}>Top</TopItemText>
         </MenuItem>
