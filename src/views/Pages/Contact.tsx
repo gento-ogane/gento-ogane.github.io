@@ -89,7 +89,7 @@ const Contact: React.FC = (props) => {
           label="content"
           variant="outlined"
           multiline
-          rows={10}
+          rows={20}
           onChange={_handleContentChange}
         />
         <SubmitButton variant="outlined" onClick={_handlePostForm}>
@@ -104,6 +104,7 @@ const Wrap = styled.div`
   margin-top: ${headerHeightNum + "px"};
   margin-bottom: ${footerHeightNum + "px"};
   width: 100%;
+  height:100vh;
   text-align: center;
 `;
 
