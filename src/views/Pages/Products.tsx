@@ -4,21 +4,50 @@ import TitleText from '../atoms/TitleText';
 import { headerHeightNum } from '../../utils/size';
 import ProductCard from '../organisms/ProductCard';
 import logo1 from '../../utils/products/product01.jpg';
-import { Grid } from '@material-ui/core';
+import { Grid, Box } from '@material-ui/core';
 
 const Products: React.FC = props => {
   return (
     <Wrap>
       <TitleText variant='h5'>Products</TitleText>
-      <Grid>
-        <ProductCard
-          image={logo1}
-          title={'Gentz.dev'}
-          detail={
-            '自身の経歴や作品をまとめたシンプルなポートフォリオサイトです。'
-          }
-        />
-      </Grid>
+      <Box display='flex'>
+        <Box p={2}>
+          <ProductCard
+            image={logo1}
+            title={'Gentz.dev'}
+            detail={
+              '自身の経歴や作品をまとめたシンプルなポートフォリオサイトです。'
+            }
+          />
+        </Box>
+        <Box p={2}>
+          <ProductCard
+            image={logo1}
+            title={'Gentz.dev'}
+            detail={
+              '自身の経歴や作品をまとめたシンプルなポートフォリオサイトです。'
+            }
+          />
+        </Box>
+        <Box p={2}>
+          <ProductCard
+            image={logo1}
+            title={'Gentz.dev'}
+            detail={
+              '自身の経歴や作品をまとめたシンプルなポートフォリオサイトです。'
+            }
+          />
+        </Box>
+        <Box p={2}>
+          <ProductCard
+            image={logo1}
+            title={'Gentz.dev'}
+            detail={
+              '自身の経歴や作品をまとめたシンプルなポートフォリオサイトです。'
+            }
+          />
+        </Box>
+      </Box>
     </Wrap>
   );
 };

@@ -6,6 +6,7 @@ import Products from './pages/Products';
 import About from './pages/About';
 import Header from './organisms/Header';
 import Footer from './organisms/Footer';
+import { headerHeightNum } from '../utils/size';
 
 const Home: React.FC = props => {
   return (
@@ -28,7 +29,7 @@ const Home: React.FC = props => {
 const Content = styled.div`
   display: flex;
   width: 100%;
-  height: 100%;
+  min-height: calc(100vh - ${headerHeightNum + 'px'});
 `;
 
 export default Home;

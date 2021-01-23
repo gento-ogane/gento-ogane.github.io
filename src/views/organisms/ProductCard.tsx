@@ -23,7 +23,7 @@ const useStyles = makeStyles({
 });
 const ProductCard: React.FC<Props> = props => {
   return (
-    <Card> 
+    <Card style={{ maxWidth: 345 }}>
       <CardActionArea>
         <CardMedia
           component='img'
@@ -42,9 +42,6 @@ const ProductCard: React.FC<Props> = props => {
         </CardContent>
       </CardActionArea>
       <CardActions>
-        <Button size='small' color='primary'>
-          Learn More
-        </Button>
       </CardActions>
     </Card>
   );
