@@ -11,7 +11,7 @@ import { headerHeightNum } from '../utils/size';
 const Home: React.FC = props => {
   return (
     <>
-      <Router>
+      <Router basename={process.env.PUBLIC_URL}>
         <Header />
         <Switch>
           <Content>
