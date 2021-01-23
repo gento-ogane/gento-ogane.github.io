@@ -11,7 +11,6 @@ import { headerHeightNum } from '../utils/size';
 require('dotenv').config();
 
 const Home: React.FC = props => {
-  console.log(process.env.PUBLIC_URL);
   
   return (
     <>
