@@ -8,19 +8,17 @@ import Header from './organisms/Header';
 import Footer from './organisms/Footer';
 import { headerHeightNum } from '../utils/size';
 
-require('dotenv').config();
-
 const Home: React.FC = props => {
   
   return (
     <>
-      <Router basename={process.env.PUBLIC_URL}>
+      <Router>
         <Header />
         <Switch>
           <Content>
-            <Route exact path='/' component={Top} />
-            <Route exact path='/about' component={About} />
-            <Route exact path='/products' component={Products} />
+            <Route exact path='/gentz' component={Top} />
+            <Route exact path='/gentz/about' component={About} />
+            <Route exact path='/gentz/products' component={Products} />
           </Content>
         </Switch>
         <Footer />

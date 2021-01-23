@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "https://gento-ogane.github.io/gentz/static/css/main.5ecd60fb.chunk.css",
-    "main.js": "https://gento-ogane.github.io/gentz/static/js/main.4dbd1ad2.chunk.js",
-    "main.js.map": "https://gento-ogane.github.io/gentz/static/js/main.4dbd1ad2.chunk.js.map",
-    "runtime-main.js": "https://gento-ogane.github.io/gentz/static/js/runtime-main.9c22ab5d.js",
-    "runtime-main.js.map": "https://gento-ogane.github.io/gentz/static/js/runtime-main.9c22ab5d.js.map",
-    "static/js/2.a8bb01a3.chunk.js": "https://gento-ogane.github.io/gentz/static/js/2.a8bb01a3.chunk.js",
-    "static/js/2.a8bb01a3.chunk.js.map": "https://gento-ogane.github.io/gentz/static/js/2.a8bb01a3.chunk.js.map",
-    "index.html": "https://gento-ogane.github.io/gentz/index.html",
-    "precache-manifest.10652ae1bca44230c5c7a7218a3b7e5d.js": "https://gento-ogane.github.io/gentz/precache-manifest.10652ae1bca44230c5c7a7218a3b7e5d.js",
-    "service-worker.js": "https://gento-ogane.github.io/gentz/service-worker.js",
-    "static/css/main.5ecd60fb.chunk.css.map": "https://gento-ogane.github.io/gentz/static/css/main.5ecd60fb.chunk.css.map",
-    "static/js/2.a8bb01a3.chunk.js.LICENSE.txt": "https://gento-ogane.github.io/gentz/static/js/2.a8bb01a3.chunk.js.LICENSE.txt",
-    "static/media/product01.jpg": "https://gento-ogane.github.io/gentz/static/media/product01.44db728e.jpg"
+    "main.css": "/gentz/static/css/main.5ecd60fb.chunk.css",
+    "main.js": "/gentz/static/js/main.880be768.chunk.js",
+    "main.js.map": "/gentz/static/js/main.880be768.chunk.js.map",
+    "runtime-main.js": "/gentz/static/js/runtime-main.3729fe00.js",
+    "runtime-main.js.map": "/gentz/static/js/runtime-main.3729fe00.js.map",
+    "static/js/2.b7eb3adc.chunk.js": "/gentz/static/js/2.b7eb3adc.chunk.js",
+    "static/js/2.b7eb3adc.chunk.js.map": "/gentz/static/js/2.b7eb3adc.chunk.js.map",
+    "index.html": "/gentz/index.html",
+    "precache-manifest.53ad7e24f7ecba317b1edef4bf31ddb3.js": "/gentz/precache-manifest.53ad7e24f7ecba317b1edef4bf31ddb3.js",
+    "service-worker.js": "/gentz/service-worker.js",
+    "static/css/main.5ecd60fb.chunk.css.map": "/gentz/static/css/main.5ecd60fb.chunk.css.map",
+    "static/js/2.b7eb3adc.chunk.js.LICENSE.txt": "/gentz/static/js/2.b7eb3adc.chunk.js.LICENSE.txt",
+    "static/media/product01.jpg": "/gentz/static/media/product01.44db728e.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.9c22ab5d.js",
-    "static/js/2.a8bb01a3.chunk.js",
+    "static/js/runtime-main.3729fe00.js",
+    "static/js/2.b7eb3adc.chunk.js",
     "static/css/main.5ecd60fb.chunk.css",
-    "static/js/main.4dbd1ad2.chunk.js"
+    "static/js/main.880be768.chunk.js"
   ]
 }
