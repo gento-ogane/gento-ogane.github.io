@@ -8,6 +8,8 @@ import Header from './organisms/Header';
 import Footer from './organisms/Footer';
 import { headerHeightNum } from '../utils/size';
 
+require('dotenv').config();
+
 const Home: React.FC = props => {
   return (
     <>
