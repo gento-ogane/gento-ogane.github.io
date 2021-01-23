@@ -9,8 +9,8 @@ const Top: React.FC = props => {
       <TitleText variant='h5'>Top</TitleText>
       <TopTitle>Welcome to Gento's Portfolio Site!!</TopTitle>
       <TopText>
-        将来は技術的知識のみならず、幅広いビジネス知識を兼ね備えながらも周りを牽引するようなエンジニアを目指し日々精進しております。
-        そのためのプロダクトや記事などを発信するためのサイトです。どうぞ暇つぶし程度にご覧になってください。
+        Working hard every day to become an engineer lead the surroundings while having not only technical knowledge but also a wide range of business knowledge. 
+        This is a site for sending products and articles.
       </TopText>
     </Wrap>
   );

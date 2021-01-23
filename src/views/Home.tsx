@@ -16,7 +16,7 @@ const Home: React.FC = props => {
         <Header />
         <Switch>
           <Content>
-            <Route exact path='/gentz' component={Top} />
+            <Route exact path='/gentz/' component={Top} />
             <Route exact path='/gentz/about' component={About} />
             <Route exact path='/gentz/products' component={Products} />
           </Content>
