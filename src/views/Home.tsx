@@ -1,6 +1,6 @@
 import * as React from 'react';
 import styled from 'styled-components';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { HashRouter as Router, Route, Switch } from 'react-router-dom';
 import Top from './pages/Top';
 import Products from './pages/Products';
 import About from './pages/About';
@@ -13,7 +13,7 @@ require('dotenv').config();
 const Home: React.FC = props => {
   return (
     <>
-      <Router basename={process.env.PUBLIC_URL}>
+      <Router>
         <Header />
         <Switch>
           <Content>
