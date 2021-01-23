@@ -1,18 +1,18 @@
-import * as React from "react";
-import styled from "styled-components";
-import TitleText from "../atoms/TitleText";
-import Avatar from "../../utils/avatar.jpg";
-import Chip from "@material-ui/core/Chip";
-import { headerHeightNum } from "../../utils/size";
+import * as React from 'react';
+import styled from 'styled-components';
+import TitleText from '../atoms/TitleText';
+import Avatar from '../../utils/avatar.jpg';
+import Chip from '@material-ui/core/Chip';
+import { headerHeightNum } from '../../utils/size';
 import Divider from '@material-ui/core/Divider';
 
-const About: React.FC = (props) => {
+const About: React.FC = props => {
   return (
     <Wrap>
-      <TitleText variant="h5">About</TitleText>
-      <TitleText variant="h6">profile</TitleText>
-      <Divide variant="middle" />
-      <Img src={Avatar} alt="avatar" />
+      <TitleText variant='h5'>About</TitleText>
+      <TitleText variant='h6'>profile</TitleText>
+      <Divide variant='middle' />
+      <Img src={Avatar} alt='avatar' />
       <Table>
         <Tbody>
           <tr>
@@ -37,38 +37,49 @@ const About: React.FC = (props) => {
           </tr>
         </Tbody>
       </Table>
-      <TitleText variant="h6">skills</TitleText>
-      <Divide variant="middle" />
+      <TitleText variant='h6'>skills</TitleText>
+      <Divide variant='middle' />
+      <Star>★★★★★</Star>
+      <Row>
+        <SkillChip label='React' />
+        <SkillChip label='TypeScript' />
+        <SkillChip label='JavaScript' />
+      </Row>
+      <Star>★★★★</Star>
+      <Row>
+        <SkillChip label='Unity(C#)' />
+        <SkillChip label='Next.js' />
+        <SkillChip label='Ruby on Rails' />
+        <SkillChip label='HTML' />
+        <SkillChip label='CSS' />
+      </Row>
       <Star>★★★</Star>
-      <RowThree>
-        <SkillChip label="React" />
-        <SkillChip label="Unity(C#)" />
-        <SkillChip label="Amplify" />
-        <SkillChip label="HTML" />
-        <SkillChip label="CSS" />
-      </RowThree>
+      <Row>
+        <SkillChip label='Git/GitHub' />
+        <SkillChip label='Amplify' />
+        <SkillChip label='Python' />
+        <SkillChip label='Flask' />
+        <SkillChip label='AWS' />
+      </Row>
       <Star>★★</Star>
-      <RowTwo>
-        <SkillChip label="Python" />
-        <SkillChip label="GAS" />
-        <SkillChip label="Git/GitHub" />
-        <SkillChip label="jQuery" />
-        <SkillChip label="TypeScript" />
-      </RowTwo>
+      <Row>
+        <SkillChip label='GAS' />
+        <SkillChip label='Docker' />
+        <SkillChip label='jQuery' />
+        <SkillChip label='jinja2' />
+      </Row>
       <Star>★</Star>
-      <RowOne>
-        <SkillChip label="Flutter" />
-        <SkillChip label="Docker" />
-        <SkillChip label="AWS" />
-        <SkillChip label="Ruby on Rails" />
-        <SkillChip label="WordPress" />
-      </RowOne>
+      <Row>
+        <SkillChip label='Flutter' />
+        <SkillChip label='WordPress' />
+        <SkillChip label='FireBase' />
+      </Row>
     </Wrap>
   );
 };
 
 const Wrap = styled.div`
-  margin-top: ${headerHeightNum + "px"};
+  margin-top: ${headerHeightNum + 'px'};
   width: 100%;
   text-align: center;
   padding-bottom: 100px;
@@ -101,29 +112,14 @@ const Tdr = styled.td`
   padding: 10px;
 `;
 
-const RowThree = styled.div`
+const Row = styled.div`
   display: flex;
   justify-content: space-around;
   align-content: space-around;
   flex-wrap: wrap;
   width: 50%;
   margin: auto;
-`;
-const RowTwo = styled.div`
-  display: flex;
-  justify-content: space-around;
-  align-content: space-around;
-  flex-wrap: wrap;
-  width: 50%;
-  margin: auto;
-`;
-const RowOne = styled.div`
-  display: flex;
-  justify-content: space-around;
-  align-content: space-around;
-  flex-wrap: wrap;
-  width: 50%;
-  margin: auto;
+  margin-bottom: 60px;
 `;
 
 const SkillChip = styled(Chip)`
@@ -131,11 +127,11 @@ const SkillChip = styled(Chip)`
 `;
 
 const Star = styled.p`
- color: #494eaa;
-`
-const Divide=styled(Divider)`
- width:40%;
- margin:auto !important;
-`
+  color: #494eaa;
+`;
+const Divide = styled(Divider)`
+  width: 40%;
+  margin: auto !important;
+`;
 
 export default About;

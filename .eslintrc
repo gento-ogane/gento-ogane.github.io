@@ -1,0 +1,27 @@
+{
+    "extends": [
+        "plugin:@typescript-eslint/recommended",
+        "plugin:react/recommended",
+        "plugin:prettier/recommended",
+        "prettier/@typescript-eslint",
+        "prettier/react"
+    ],
+    "rules": {
+        "@typescript-eslint/explicit-function-return-type": "off",
+        "@typescript-eslint/explicit-member-accessibility": "off",
+        "@typescript-eslint/no-parameter-properties": "off",
+        "react/prop-types": "off",
+        "prettier/prettier": ["error", {
+            "singleQuote": true,
+            "jsxSingleQuote": true,
+            "trailingComma": "all",
+            "quoteProps": "preserve",
+            "arrowParens": "avoid"
+        }]
+    },
+    "settings": {
+        "react": {
+            "version": "detect"
+        }
+    }
+}
