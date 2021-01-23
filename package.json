@@ -38,7 +38,7 @@
     "lint": "eslint --ext=.ts,.tsx .",
     "rm": "rm -rf docs",
     "mv": "mv build docs",
-    "git": "git add . && git commit && git push origin master"
+    "git": "git commit -m 'deploy' && git push origin master"
   },
   "eslintConfig": {
     "extends": "react-app"
