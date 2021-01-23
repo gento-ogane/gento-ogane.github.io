@@ -11,15 +11,15 @@ const Products: React.FC = props => {
     <Wrap>
       <TitleText variant='h5'>Products</TitleText>
       <Container>
-      <WrapBox>
-        <ProductCard
-          image={logo1}
-          title={'Gentz.dev'}
-          detail={
-            '自身の経歴や作品をまとめたシンプルなポートフォリオサイトです。'
-          }
-        />
-      </WrapBox>
+        <WrapBox>
+          <ProductCard
+            image={logo1}
+            title={'Gentz.dev'}
+            detail={
+              '自身の経歴や作品をまとめたシンプルなポートフォリオサイトです。'
+            }
+          />
+        </WrapBox>
       </Container>
     </Wrap>
   );
@@ -31,14 +31,14 @@ const Wrap = styled.div`
 `;
 
 const Container = styled.div`
-  width:calc((100vw - 1 * 100vw/ 4) + 6*40px);
+  width: calc((100vw - 1 * 100vw / 4) + 6 * 40px);
   margin: auto;
-`
+`;
 
 const WrapBox = styled(Box)`
-  display:flex;
-  justify-content:flex-start;
-  flex-wrap:wrap;
-`
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+`;
 
 export default Products;

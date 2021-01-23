@@ -5,7 +5,7 @@ import {
   CardMedia,
   CardContent,
   Typography,
-  Box
+  Box,
 } from '@material-ui/core';
 import styled from 'styled-components';
 
