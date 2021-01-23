@@ -27,9 +27,6 @@ return (
         <MenuItem button onClick={()=>{history.push('/products');setMenuState(2)}}>
           <ProductsItemText state={menuState} >Products</ProductsItemText>
         </MenuItem>
-        <MenuItem button onClick={()=>{history.push('/contact');setMenuState(3)}}>
-          <ContactItemText state={menuState} >Contact</ContactItemText>
-        </MenuItem>
       </Bar>
     </Head>
 );
@@ -65,10 +62,6 @@ const AboutItemText=styled(ListItemText)<{state:Number}>`
 const ProductsItemText=styled(ListItemText)<{state:Number}>`
   text-align:center;
   color:${props=>props.state===2?"#6a5acd":false};
-`
-const ContactItemText=styled(ListItemText)<{state:Number}>`
-  text-align:center;
-  color:${props=>props.state===3?"#6a5acd":false};
 `
 
 
