@@ -16,12 +16,7 @@ interface Props {
   detail: string;
 }
 
-const useStyles = makeStyles({
-  root: {
-    maxWidth: 345,
-  },
-});
-const ProductCard: React.FC<Props> = props => {
+const ProductCard: React.FC<Props> = ({image,title,detail}) => {
   return (
     <Card style={{ maxWidth: 345 }}>
       <CardActionArea>
@@ -29,20 +24,18 @@ const ProductCard: React.FC<Props> = props => {
           component='img'
           alt='Contemplative Reptile'
           height='220'
-          src={props.image}
+          src={image}
           title='Contemplative Reptile'
         />
         <CardContent>
           <Typography gutterBottom variant='h5' component='h2'>
-            {props.title}
+            {title}
           </Typography>
           <Typography variant='body2' color='textSecondary' component='p'>
-            {props.detail}
+            {detail}
           </Typography>
         </CardContent>
       </CardActionArea>
-      <CardActions>
-      </CardActions>
     </Card>
   );
 };
