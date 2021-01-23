@@ -4,50 +4,23 @@ import TitleText from '../atoms/TitleText';
 import { headerHeightNum } from '../../utils/size';
 import ProductCard from '../organisms/ProductCard';
 import logo1 from '../../utils/products/product01.jpg';
-import { Grid, Box } from '@material-ui/core';
+import { Box } from '@material-ui/core';
 
 const Products: React.FC = props => {
   return (
     <Wrap>
       <TitleText variant='h5'>Products</TitleText>
-      <Box display='flex'>
-        <Box p={2}>
-          <ProductCard
-            image={logo1}
-            title={'Gentz.dev'}
-            detail={
-              '自身の経歴や作品をまとめたシンプルなポートフォリオサイトです。'
-            }
-          />
-        </Box>
-        <Box p={2}>
-          <ProductCard
-            image={logo1}
-            title={'Gentz.dev'}
-            detail={
-              '自身の経歴や作品をまとめたシンプルなポートフォリオサイトです。'
-            }
-          />
-        </Box>
-        <Box p={2}>
-          <ProductCard
-            image={logo1}
-            title={'Gentz.dev'}
-            detail={
-              '自身の経歴や作品をまとめたシンプルなポートフォリオサイトです。'
-            }
-          />
-        </Box>
-        <Box p={2}>
-          <ProductCard
-            image={logo1}
-            title={'Gentz.dev'}
-            detail={
-              '自身の経歴や作品をまとめたシンプルなポートフォリオサイトです。'
-            }
-          />
-        </Box>
-      </Box>
+      <Container>
+      <WrapBox>
+        <ProductCard
+          image={logo1}
+          title={'Gentz.dev'}
+          detail={
+            '自身の経歴や作品をまとめたシンプルなポートフォリオサイトです。'
+          }
+        />
+      </WrapBox>
+      </Container>
     </Wrap>
   );
 };
@@ -56,5 +29,16 @@ const Wrap = styled.div`
   margin-top: ${headerHeightNum + 'px'};
   width: 100%;
 `;
+
+const Container = styled.div`
+  width:calc((100vw - 1 * 100vw/ 4) + 6*40px);
+  margin: auto;
+`
+
+const WrapBox = styled(Box)`
+  display:flex;
+  justify-content:flex-start;
+  flex-wrap:wrap;
+`
 
 export default Products;
