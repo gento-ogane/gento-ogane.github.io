@@ -2,8 +2,6 @@ import * as React from "react";
 import styled from 'styled-components';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Top from "./pages/Top";
-import Articles from "./pages/Articles";
-import Contact from "./pages/Contact";
 import Products from "./pages/Products";
 import About from "./pages/About";
 import Header from  './organisms/Header';
@@ -20,7 +18,6 @@ const Home: React.FC = props => {
         <Route exact path="/" component={Top} />
         <Route exact path='/about' component={About} />
         <Route exact path='/products' component={Products} />
-        <Route exact path='/contact' component={Contact} />
         </Content>
       </Switch>
     <Footer/>
