@@ -3,7 +3,6 @@ import styled from 'styled-components';
 import TitleText from '../atoms/TitleText';
 import { headerHeightNum, footerHeightNum } from '../../utils/size';
 import Avatar from '../../utils/avatar.jpg';
-import { Box, Container } from '@material-ui/core';
 
 const Top: React.FC = props => {
   return (
