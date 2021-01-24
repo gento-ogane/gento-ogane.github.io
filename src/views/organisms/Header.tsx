@@ -15,7 +15,7 @@ const Header: React.FC = props => {
   return (
     <Head>
       <Bar>
-        <Title variant='h6'>Gentz.dev</Title>
+        <Title variant='h6'>Gentz</Title>
         <MenuItem
           button
           onClick={() => {
@@ -57,7 +57,7 @@ const Head = styled(AppBar)`
 const Bar = styled(Toolbar)``;
 
 const Title = styled(Typography)`
-  width: 50%;
+  width: 70%;
 `;
 
 const MenuItem = styled(ListItem)`

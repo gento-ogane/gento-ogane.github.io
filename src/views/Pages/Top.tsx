@@ -2,40 +2,47 @@ import * as React from 'react';
 import styled from 'styled-components';
 import TitleText from '../atoms/TitleText';
 import { headerHeightNum, footerHeightNum } from '../../utils/size';
+import Avatar from '../../utils/avatar.jpg';
+import { Box, Container } from '@material-ui/core';
 
 const Top: React.FC = props => {
   return (
     <Wrap>
       <TitleText variant='h5'>Top</TitleText>
-      <TopTitle>Welcome to Gento's Portfolio Site!!</TopTitle>
+      <Content>
+      <Img src={Avatar} alt='avatar' />
       <TopText>
-        Working hard every day to become an engineer lead the surroundings while having not only technical knowledge but also a wide range of business knowledge. 
-        This is a site for sending products and articles.
+       <p>:) Hi, I'm Gentz!</p> 
+       <p>Welcome to my portfolio site!!</p> 
+       <p>Please Relax and enjoy!!</p>
       </TopText>
+      </Content>
     </Wrap>
   );
 };
 const Wrap = styled.div`
   margin-top: ${headerHeightNum + 'px'};
   width: 100%;
+  text-align:center;
   height: calc(
     100vh - ${headerHeightNum + 'px'} - ${footerHeightNum + 'px'} - 25px
   );
 `;
 
-const TopTitle = styled.h1`
-  font-size: 60px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 14%;
-  margin-bottom: 7%;
-  color: #494eaa;
+const Img = styled.img`
+  width: 300px;
+  margin: 10px;
 `;
 
-const TopText = styled.p`
+const Content = styled.div`
+  height:60%;
+  margin: auto;
+`
+
+const TopText = styled.div`
+  justify-content: center;
   font-size: 22px;
   width: 66%;
-  margin: auto;
+  margin: 30px auto;
 `;
 export default Top;
