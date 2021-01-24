@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/gentz/static/css/main.5ecd60fb.chunk.css",
+    "main.js": "/gentz/static/js/main.fa207b1a.chunk.js",
+    "main.js.map": "/gentz/static/js/main.fa207b1a.chunk.js.map",
+    "runtime-main.js": "/gentz/static/js/runtime-main.3729fe00.js",
+    "runtime-main.js.map": "/gentz/static/js/runtime-main.3729fe00.js.map",
+    "static/js/2.b48e0e84.chunk.js": "/gentz/static/js/2.b48e0e84.chunk.js",
+    "static/js/2.b48e0e84.chunk.js.map": "/gentz/static/js/2.b48e0e84.chunk.js.map",
+    "index.html": "/gentz/index.html",
+    "precache-manifest.c8cd8b364c309002e5f119aded1e9e75.js": "/gentz/precache-manifest.c8cd8b364c309002e5f119aded1e9e75.js",
+    "service-worker.js": "/gentz/service-worker.js",
+    "static/css/main.5ecd60fb.chunk.css.map": "/gentz/static/css/main.5ecd60fb.chunk.css.map",
+    "static/js/2.b48e0e84.chunk.js.LICENSE.txt": "/gentz/static/js/2.b48e0e84.chunk.js.LICENSE.txt",
+    "static/media/product01.jpg": "/gentz/static/media/product01.44db728e.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.3729fe00.js",
+    "static/js/2.b48e0e84.chunk.js",
+    "static/css/main.5ecd60fb.chunk.css",
+    "static/js/main.fa207b1a.chunk.js"
+  ]
+}
