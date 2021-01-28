@@ -19,7 +19,7 @@ const Header: React.FC = props => {
         <MenuItem
           button
           onClick={() => {
-            history.push('/gentz');
+            history.push('/');
             setMenuState(0);
           }}
         >
@@ -28,7 +28,7 @@ const Header: React.FC = props => {
         <MenuItem
           button
           onClick={() => {
-            history.push('/gentz/about');
+            history.push('/about');
             setMenuState(1);
           }}
         >
@@ -37,7 +37,7 @@ const Header: React.FC = props => {
         <MenuItem
           button
           onClick={() => {
-            history.push('/gentz/products');
+            history.push('/products');
             setMenuState(2);
           }}
         >

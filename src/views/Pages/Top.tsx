@@ -9,12 +9,12 @@ const Top: React.FC = props => {
     <Wrap>
       <TitleText variant='h5'>Top</TitleText>
       <Content>
-      <Img src={Avatar} alt='avatar' />
-      <TopText>
-       <p>:) Hi, I'm Gentz!</p> 
-       <p>Welcome to my portfolio site!!</p> 
-       <p>Please Relax and enjoy!!</p>
-      </TopText>
+        <Img src={Avatar} alt='avatar' />
+        <TopText>
+          <p>:) Hi, I`m Gentz!</p>
+          <p>Welcome to my portfolio site!!</p>
+          <p>Please Relax and enjoy!!</p>
+        </TopText>
       </Content>
     </Wrap>
   );
@@ -22,7 +22,7 @@ const Top: React.FC = props => {
 const Wrap = styled.div`
   margin-top: ${headerHeightNum + 'px'};
   width: 100%;
-  text-align:center;
+  text-align: center;
   height: calc(
     100vh - ${headerHeightNum + 'px'} - ${footerHeightNum + 'px'} - 25px
   );
@@ -34,9 +34,9 @@ const Img = styled.img`
 `;
 
 const Content = styled.div`
-  height:60%;
+  height: 60%;
   margin: auto;
-`
+`;
 
 const TopText = styled.div`
   justify-content: center;

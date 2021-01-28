@@ -13,13 +13,13 @@ const About: React.FC = props => {
       <TitleText variant='h5'>About</TitleText>
       <TitleText variant='h6'>profile</TitleText>
       <Divide variant='middle' />
-      <Profile /> 
+      <Profile />
       <TitleText variant='h6'>intern experiences</TitleText>
       <Divide variant='middle' />
       <Experiences />
       <TitleText variant='h6'>skills</TitleText>
       <Divide variant='middle' />
-      <Skills/>
+      <Skills />
     </Wrap>
   );
 };

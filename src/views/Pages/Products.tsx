@@ -12,14 +12,12 @@ const Products: React.FC = props => {
       <TitleText variant='h5'>Products</TitleText>
       <Container>
         <WrapBox>
-          <a href="https://gento-ogane.github.io/gentz">
-          <ProductCard
-            image={logo1}
-            title={'gento-ogane.github.io'}
-            detail={
-              '自身の経歴や作品をまとめたシンプルなポートフォリオサイトです。'
-            }
-          />
+          <a href='https://gento-ogane.github.io/gentz'>
+            <ProductCard
+              image={logo1}
+              title={'gento-ogane.github.io'}
+              detail={'My portfolio site has simple design'}
+            />
           </a>
         </WrapBox>
       </Container>

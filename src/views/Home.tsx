@@ -1,6 +1,6 @@
 import * as React from 'react';
 import styled from 'styled-components';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { HashRouter as Router, Route, Switch } from 'react-router-dom';
 import Top from './pages/Top';
 import Products from './pages/Products';
 import About from './pages/About';
@@ -9,16 +9,15 @@ import Footer from './organisms/Footer';
 import { headerHeightNum } from '../utils/size';
 
 const Home: React.FC = props => {
-  
   return (
     <>
       <Router>
         <Header />
         <Switch>
           <Content>
-            <Route exact path='/gentz/' component={Top} />
-            <Route exact path='/gentz/about' component={About} />
-            <Route exact path='/gentz/products' component={Products} />
+            <Route exact path='/' component={Top} />
+            <Route exact path='/about' component={About} />
+            <Route exact path='/products' component={Products} />
           </Content>
         </Switch>
         <Footer />

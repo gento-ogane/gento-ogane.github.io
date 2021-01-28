@@ -2,13 +2,11 @@ import * as React from 'react';
 import styled from 'styled-components';
 import Avatar from '../../utils/avatar.jpg';
 
-
-const Profile:React.FC=()=>{
-
-    return(
+const Profile: React.FC = () => {
+  return (
     <>
       <Img src={Avatar} alt='avatar' />
-     <Table>
+      <Table>
         <Tbody>
           <tr>
             <Tdl>Name</Tdl>
@@ -28,9 +26,9 @@ const Profile:React.FC=()=>{
           </tr>
         </Tbody>
       </Table>
-    </>)
-
-}
+    </>
+  );
+};
 
 const Img = styled.img`
   width: 200px;
@@ -59,4 +57,4 @@ const Tdr = styled.td`
   padding: 10px;
 `;
 
-export default Profile
+export default Profile;

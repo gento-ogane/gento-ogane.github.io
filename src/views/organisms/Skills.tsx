@@ -2,20 +2,19 @@ import { Chip } from '@material-ui/core';
 import * as React from 'react';
 import styled from 'styled-components';
 
-
-const Skills:React.FC=()=>{
-
-    return(
+const Skills: React.FC = () => {
+  return (
     <>
-        <p>Languages</p>
+      <p>languages</p>
       <Row>
         <SkillChip label='JavaScript' />
         <SkillChip label='TypeScript' />
         <SkillChip label='Ruby' />
         <SkillChip label='Python' />
         <SkillChip label='C#' />
+        <SkillChip label='Golang' />
       </Row>
-      <p>FrameWorks</p>
+      <p>frameWorks & other Skills</p>
       <Row>
         <SkillChip label='React' />
         <SkillChip label='React Native' />
@@ -27,22 +26,20 @@ const Skills:React.FC=()=>{
         <SkillChip label='GAS' />
         <SkillChip label='Docker' />
       </Row>
-    </>)
-
-}
+    </>
+  );
+};
 
 const Row = styled.div`
   display: flex;
-  justify-content: space-around;
-  align-content: space-around;
-  flex-wrap: wrap;
-  width: 40%;
+  justify-content: center;
+  width: 50%;
   margin: auto;
   margin-bottom: 60px;
 `;
 
 const SkillChip = styled(Chip)`
-  margin: 10px;
+  margin: 15px;
 `;
 
-export default Skills 
+export default Skills;

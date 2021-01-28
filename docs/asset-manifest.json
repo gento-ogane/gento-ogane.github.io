@@ -1,23 +1,23 @@
 {
   "files": {
     "main.css": "/gentz/static/css/main.5ecd60fb.chunk.css",
-    "main.js": "/gentz/static/js/main.312d386e.chunk.js",
-    "main.js.map": "/gentz/static/js/main.312d386e.chunk.js.map",
+    "main.js": "/gentz/static/js/main.a4a758df.chunk.js",
+    "main.js.map": "/gentz/static/js/main.a4a758df.chunk.js.map",
     "runtime-main.js": "/gentz/static/js/runtime-main.3729fe00.js",
     "runtime-main.js.map": "/gentz/static/js/runtime-main.3729fe00.js.map",
-    "static/js/2.b48e0e84.chunk.js": "/gentz/static/js/2.b48e0e84.chunk.js",
-    "static/js/2.b48e0e84.chunk.js.map": "/gentz/static/js/2.b48e0e84.chunk.js.map",
+    "static/js/2.2ab5eb54.chunk.js": "/gentz/static/js/2.2ab5eb54.chunk.js",
+    "static/js/2.2ab5eb54.chunk.js.map": "/gentz/static/js/2.2ab5eb54.chunk.js.map",
     "index.html": "/gentz/index.html",
-    "precache-manifest.f3b20cc2f701579162fab2342feae876.js": "/gentz/precache-manifest.f3b20cc2f701579162fab2342feae876.js",
+    "precache-manifest.138e5d64678557336cc998d263c9269d.js": "/gentz/precache-manifest.138e5d64678557336cc998d263c9269d.js",
     "service-worker.js": "/gentz/service-worker.js",
     "static/css/main.5ecd60fb.chunk.css.map": "/gentz/static/css/main.5ecd60fb.chunk.css.map",
-    "static/js/2.b48e0e84.chunk.js.LICENSE.txt": "/gentz/static/js/2.b48e0e84.chunk.js.LICENSE.txt",
+    "static/js/2.2ab5eb54.chunk.js.LICENSE.txt": "/gentz/static/js/2.2ab5eb54.chunk.js.LICENSE.txt",
     "static/media/product01.jpg": "/gentz/static/media/product01.44db728e.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.3729fe00.js",
-    "static/js/2.b48e0e84.chunk.js",
+    "static/js/2.2ab5eb54.chunk.js",
     "static/css/main.5ecd60fb.chunk.css",
-    "static/js/main.312d386e.chunk.js"
+    "static/js/main.a4a758df.chunk.js"
   ]
 }

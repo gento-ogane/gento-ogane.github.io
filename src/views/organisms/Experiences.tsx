@@ -1,12 +1,10 @@
 import * as React from 'react';
 import styled from 'styled-components';
 
-
-const Experiences:React.FC=()=>{
-
-    return(
+const Experiences: React.FC = () => {
+  return (
     <>
-    <Table>
+      <Table>
         <Tbody>
           <tr>
             <Tdl>2019.4 ~ 2021.1</Tdl>
@@ -23,7 +21,7 @@ const Experiences:React.FC=()=>{
           <tr>
             <Tdl>2020.8.31 ~ 8.2</Tdl>
             <Tdr>AamazonWebService</Tdr>
-          </tr> 
+          </tr>
           <tr>
             <Tdl>2020.10.8 ~ 10.28</Tdl>
             <Tdr>Speee</Tdr>
@@ -34,10 +32,9 @@ const Experiences:React.FC=()=>{
           </tr>
         </Tbody>
       </Table>
-    </>)
-
-}
-
+    </>
+  );
+};
 
 const Table = styled.table`
   display: flex;
@@ -51,7 +48,7 @@ const Tbody = styled.tbody`
 `;
 
 const Tdl = styled.td`
-  width:65%;
+  width: 65%;
   text-align: left;
   padding: 10px;
 `;
@@ -61,4 +58,4 @@ const Tdr = styled.td`
   padding: 10px;
 `;
 
-export default Experiences
+export default Experiences;
