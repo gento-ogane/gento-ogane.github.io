@@ -12,7 +12,7 @@ const Skills: React.FC = () => {
         <SkillChip label='Ruby' />
         <SkillChip label='Python' />
         <SkillChip label='C#' />
-        <SkillChip label='Golang' />
+        <SkillChip label='Go' />
       </Row>
       <p>frameWorks & other Skills</p>
       <Row>

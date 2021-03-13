@@ -4,7 +4,7 @@ import TitleText from '../atoms/TitleText';
 import { headerHeightNum, footerHeightNum } from '../../utils/size';
 import Avatar from '../../utils/avatar.jpg';
 
-const Top: React.FC = props => {
+const Top: React.FC = () => {
   return (
     <Wrap>
       <TitleText variant='h5'>Top</TitleText>
