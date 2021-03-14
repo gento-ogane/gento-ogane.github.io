@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import TitleText from '../atoms/TitleText';
 import { headerHeightNum } from '../../utils/size';
 
-const Articles: React.FC = props => {
+const Articles: React.FC = () => {
   return (
     <Wrap>
       <TitleText variant='h5'>Articles</TitleText>

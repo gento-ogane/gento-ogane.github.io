@@ -6,7 +6,7 @@ import ProductCard from '../organisms/ProductCard';
 import logo1 from '../../utils/products/product01.jpg';
 import { Box } from '@material-ui/core';
 
-const Products: React.FC = props => {
+const Products: React.FC = () => {
   return (
     <Wrap>
       <TitleText variant='h5'>Products</TitleText>

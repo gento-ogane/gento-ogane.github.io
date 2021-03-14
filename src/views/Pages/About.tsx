@@ -7,7 +7,7 @@ import Skills from '../organisms/Skills';
 import Profile from '../organisms/Profile';
 import Experiences from '../organisms/Experiences';
 
-const About: React.FC = props => {
+const About: React.FC = () => {
   return (
     <Wrap>
       <TitleText variant='h5'>About</TitleText>

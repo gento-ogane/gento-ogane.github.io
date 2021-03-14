@@ -8,7 +8,7 @@ import ListItemText from '@material-ui/core/ListItemText';
 import { headerHeightNum } from '../../utils/size';
 import { useHistory } from 'react-router-dom';
 
-const Header: React.FC = props => {
+const Header: React.FC = () => {
   const history = useHistory();
   const [menuState, setMenuState] = useState(0);
 
